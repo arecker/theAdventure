@@ -1,6 +1,8 @@
 CC=g++
 
-all: adventure
+all: hook adventure
+
+hook: $(shell ./beforeMake.sh)
 
 adventure: main.o db.o screen.o
 	$(CC) main.o db.o screen.o -lsqlite3 -o adventure
