@@ -1,7 +1,8 @@
+#include "db.h"
 #include <iostream>
-#include <string>
 
 int main()
 {
-	std::cout << "Hi." << std::endl;
+	DataManager::validateDB();
+    return 0;
 }
