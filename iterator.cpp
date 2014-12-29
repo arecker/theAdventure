@@ -4,7 +4,19 @@
 
 ScreenIterator::ScreenIterator()
 {
-	std::string myString = "Hello.";
-	Screen myScreen (myString);
-	CurrentScreen = myScreen;
+	CurrentScreen = ScreenIterator::getScreenByID(1);
+	HasNext = true;
+}
+
+Screen ScreenIterator::getScreenByID(int id)
+{
+	// Get from Database
+	
+	// Return new screen
+	return Screen ("Hello.");
+}
+
+void ScreenIterator::getNext()
+{
+	HasNext = false;
 }

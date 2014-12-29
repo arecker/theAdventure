@@ -5,5 +5,10 @@
 int main()
 {
 	ScreenIterator it;
-	std::cout << it.CurrentScreen.getMessage() << std::endl;
+	do {
+
+		std::cout << it.CurrentScreen.getMessage() << std::endl;
+		it.getNext();
+		
+	} while (it.HasNext);
 }
