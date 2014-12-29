@@ -3,3 +3,6 @@ compiler: gcc
 script: make
 notifications:
   email: false
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y sqlite3 libsqlite3-dev
