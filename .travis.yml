@@ -2,4 +2,4 @@ language: cpp
 compiler: gcc
 script: make
 notifications:
-	email: false
+  email: false
