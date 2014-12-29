@@ -1,11 +1,9 @@
 #include <iostream>
 #include <string>
-#include "db.h"
-#include "screen.h"
+#include "iterator.h"
 
 int main()
 {
-	std::string myString = "Hello.";
-	Screen myScreen (myString);
-	std::cout << myScreen.getMessage() << std::endl;
+	ScreenIterator it;
+	std::cout << it.CurrentScreen.getMessage() << std::endl;
 }
