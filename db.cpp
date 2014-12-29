@@ -4,11 +4,14 @@
 
 bool DataManager::databaseExists()
 {
-	sqlite3 *db;
-    return (sqlite3_open("data.db", &db) == SQLITE_OK);
+	
 }
 
 int DataManager::validateDB()
 {
-	if (DataManager::databaseExists()) return 0;
+	if (DataManager::databaseExists())
+	{
+		sqlite3 *db;
+		sqlite3_open("data.db", &db);
+	}
 }
